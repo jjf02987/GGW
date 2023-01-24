@@ -1,10 +1,10 @@
 const data = {
     products:  [
         {
-            name: "product 1",
+            name: "10\" Glass Marijuana Print Water Pipe",
             slug: "product-1",
             category: "products",
-            image: "/images/p1.jpg",
+            image: "C:/GGW/frontend/public/images/glass-bong-ganja.webp",
             price: 120,
             countInStock: 10,
             brand: "MJ",
@@ -13,7 +13,7 @@ const data = {
             description: "This product really products."
         },
         {
-            name: "product 2",
+            name: "Fumed 10\" Silver mini Witch Doctor",
             slug: "product-2",
             category: "products",
             image: "C:/GGW/frontend/public/images/Fumed 10in Silver mini Witch Doctor.jpg",
@@ -25,10 +25,10 @@ const data = {
             description: "This product really products."
         },
         {
-            name: "product 3",
+            name: "8\" silcon knot with recycler",
             slug: "product-3",
             category: "products",
-            image: "/images/p1.jpg",
+            image: "C:/GGW/frontend/public/images/glass-bong-glass-water-pipe.jpg",
             price: 120,
             countInStock: 10,
             brand: "MJ",
@@ -37,10 +37,10 @@ const data = {
             description: "This product really products."
         },
         {
-            name: "product 4",
+            name: "10\" Lookah Heady",
             slug: "product-4",
             category: "products",
-            image: "/images/p1.jpg",
+            image: "C:/GGW/frontend/public/images/LookahHeady.jpg",
             price: 120,
             countInStock: 10,
             brand: "MJ",
