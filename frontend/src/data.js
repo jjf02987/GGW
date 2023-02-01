@@ -1,4 +1,4 @@
-const data = {
+/*const data = {
   products: [
     {
       name: '10" Glass Marijuana Print Water Pipe',
@@ -52,3 +52,4 @@ const data = {
   ],
 };
 export default data;
+*/
