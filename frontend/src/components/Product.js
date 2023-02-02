@@ -7,11 +7,11 @@ function Product(props) {
   const { product } = props;
 
   return (
-    <Card>
+    <Card className="card">
       <Link to={`/product/${product.slug}`}>
         <img src={product.image} className="card-img-top" alt={product.name} />
       </Link>
-      <Card.Body>
+      <Card.Body className="card-body">
         <Link to={`/product/${product.slug}`}>
           <Card.Title>{product.name}</Card.Title>
         </Link>
