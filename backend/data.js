@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      _id: "1",
+      //_id: "1",
       name: '10" Marijuana Leaf Print Water Pipe',
       slug: '10" Marijuana Leaf Print Water Pipe',
       category: "products",
@@ -14,7 +14,7 @@ const data = {
       description: "This product really products.",
     },
     {
-      _id: "2",
+      //_id: "2",
       name: "Chameleon-glass-atmosphere-series-fumed",
       slug: "Chameleon-glass-atmosphere-series-fumed",
       category: "products",
@@ -27,7 +27,7 @@ const data = {
       description: "This product really products.",
     },
     {
-      _id: "3",
+      //_id: "3",
       name: '8" silicon knot with recycler',
       slug: '8" silicon knot with recycler',
       category: "products",
@@ -40,7 +40,7 @@ const data = {
       description: "This product really products.",
     },
     {
-      _id: "4",
+      //_id: "4",
       name: '10" Lookah Heady',
       slug: '10" Lookah Heady',
       category: "products",
