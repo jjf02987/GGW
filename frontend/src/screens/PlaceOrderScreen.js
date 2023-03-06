@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { getError } from "../utils";
 import { Store } from "../Store";
 import CheckoutSteps from "../components/CheckoutSteps";
-import Axios from "axios";
+import axios from "axios";
 import LoadingBox from "../components/LoadingBox";
 
 const reducer = (state, action) => {
@@ -48,7 +48,7 @@ export default function PlaceOrderScreen() {
     try {
       dispatch({ type: "CREATE_REQUEST" });
 
-      const { data } = await Axios.post(
+      const { data } = await axios.post(
         "/api/orders",
         {
           orderItems: cart.cartItems,

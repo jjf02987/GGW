@@ -92,3 +92,7 @@ main {
 height: fit-content;
 max-width: 100%;
 }
+
+.HSmb-3 {
+  max-height: min-content;
+}
