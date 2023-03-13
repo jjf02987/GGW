@@ -7,10 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 .site-container {
   min-height: 100vh;
@@ -27,12 +38,12 @@ main {
   margin-top: auto;
 }
 
-.card{
+.card {
   height: 100%;
   max-height: 500px;
 }
 
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +61,7 @@ main {
 .product {
   border: 1px #000000 solid;
   margin: 1rem;
-  
+
 }
 
 .product img {
@@ -70,33 +81,46 @@ main {
   height: 80px;
 }
 
-.small-containter{
+.small-containter {
   max-width: 600px;
 }
 
-.container-sm{
+.container-sm {
   max-width: 60%;
 }
 
-.checkout-steps > div {
+.checkout-steps>div {
   border-bottom: 0.2rem solid #a0a0a0;
   color: #a0a0a0;
 }
 
-.checkout-steps > div.active {
+.checkout-steps>div.active {
   border-bottom: 0.2rem solid green;
   color: green
 }
 
 .mb-3 {
-height: fit-content;
-max-width: 100%;
+  height: fit-content;
+  max-width: 100%;
+}
+
+.SImy-3 {
+  text-align: center;
+}
+
+.mb-3 {
+  max-width: 600px;
+  content: center;
 }
 
 .HSmb-3 {
   max-height: min-content;
 }
 
-.profileScreenContainer{
+.profileScreenContainer {
   max-width: 60%;
+}
+
+.PSmy-3 {
+  text-align: center;
 }

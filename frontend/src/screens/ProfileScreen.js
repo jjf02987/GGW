@@ -62,13 +62,13 @@ export default function ProfileScreen() {
   };
 
   return (
-    <div className="profileScreenContainer">
+    <div className="container-sm">
       <Helmet>
         <title>User Profile</title>
       </Helmet>
-      <h1 className="my-3">User Profile</h1>
+      <h1 className="PSmy-3">User Profile</h1>
       <form onSubmit={submitHandler}>
-        <Form.Group className="mb-3" controlId="name">
+        <Form.Group className="PSmb-3" controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control
             value={name}
@@ -76,7 +76,7 @@ export default function ProfileScreen() {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="email">
+        <Form.Group className="PSmb-3" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
             value={email}
@@ -84,21 +84,21 @@ export default function ProfileScreen() {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="password">
+        <Form.Group className="PSmb-3" controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="password">
+        <Form.Group className="PSmb-3" controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </Form.Group>
-        <div className="mb-3">
+        <div className="PSmb-3">
           <Button type="submit">Update</Button>
         </div>
       </form>
