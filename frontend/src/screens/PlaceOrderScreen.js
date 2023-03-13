@@ -90,7 +90,7 @@ export default function PlaceOrderScreen() {
       <h1 className="my-3">Preview Order</h1>
       <Row>
         <Col md={8}>
-          <Card className="mb-3">
+          <Card className="POmb-3">
             <Card.Body>
               <Card.Title>Shipping</Card.Title>
               <Card.Text>
@@ -103,7 +103,7 @@ export default function PlaceOrderScreen() {
             </Card.Body>
           </Card>
 
-          <Card className="mb-3">
+          <Card className="POmb-3">
             <Card.Body>
               <Card.Title>Payment</Card.Title>
               <Card.Text>
@@ -113,7 +113,7 @@ export default function PlaceOrderScreen() {
             </Card.Body>
           </Card>
 
-          <Card className="mb-3">
+          <Card className="POmb-3">
             <Card.Body>
               <Card.Title>Items</Card.Title>
               <ListGroup variant="flush">

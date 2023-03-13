@@ -100,29 +100,20 @@ main {
   color: green
 }
 
-.mb-3 {
+.my-3 {
+  text-align: center;
+}
+
+.POmb-3 {
   height: fit-content;
   max-width: 100%;
 }
 
-.SImy-3 {
-  text-align: center;
+.Omb-3 {
+  height: fit-content;
+  max-width: 100%;
 }
 
-.mb-3 {
-  max-width: 600px;
-  content: center;
-  padding-top: 4px;
-}
-
-.HSmb-3 {
-  max-height: min-content;
-}
-
-.profileScreenContainer {
-  max-width: 60%;
-}
-
-.PSmy-3 {
+.Header {
   text-align: center;
 }

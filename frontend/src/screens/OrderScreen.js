@@ -138,16 +138,18 @@ export default function OrderScreen() {
       <Helmet>
         <title>Order {orderId}</title>
       </Helmet>
-      <h1 className="my-3">Order {orderId}</h1>
+      <h1 className="my-3">
+        Order <br></br> {orderId}
+      </h1>
       <Row>
         <Col md={8}>
-          <Card className="mb-3">
+          <Card className="Omb-3">
             <Card.Body>
               <Card.Title>Shipping</Card.Title>
               <Card.Text>
                 <strong>Name:</strong> {order.shippingAddress.fullName} <br />
                 <strong>Address: </strong> {order.shippingAddress.address},
-                {order.shippingAddress.city}, {order.shippingAddress.zipCode},
+                {order.shippingAddress.city} {order.shippingAddress.zipCode}{" "}
                 {order.shippingAddress.country}
               </Card.Text>
               {order.isDelivered ? (
@@ -159,7 +161,7 @@ export default function OrderScreen() {
               )}
             </Card.Body>
           </Card>
-          <Card className="mb-3">
+          <Card className="Omb-3">
             <Card.Body>
               <Card.Title>Payment</Card.Title>
               <Card.Text>
@@ -175,7 +177,7 @@ export default function OrderScreen() {
             </Card.Body>
           </Card>
 
-          <Card className="mb-3">
+          <Card className="Omb-3">
             <Card.Body>
               <Card.Title>Items</Card.Title>
               <ListGroup variant="flush">
@@ -202,7 +204,7 @@ export default function OrderScreen() {
           </Card>
         </Col>
         <Col md={4}>
-          <Card className="mb-3">
+          <Card className="Omb-3">
             <Card.Body>
               <Card.Title>Order Summary</Card.Title>
               <ListGroup variant="flush">

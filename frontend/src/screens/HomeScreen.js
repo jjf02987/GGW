@@ -48,7 +48,7 @@ function HomeScreen() {
       <Helmet>
         <title>Glass Gone Wow</title>
       </Helmet>
-      <h1>Featured Products</h1>
+      <h1 className="Header">Featured Products</h1>
       <div className="products">
         {loading ? (
           <LoadingBox />
