@@ -96,3 +96,7 @@ max-width: 100%;
 .HSmb-3 {
   max-height: min-content;
 }
+
+.profileScreenContainer{
+  max-width: 60%;
+}
