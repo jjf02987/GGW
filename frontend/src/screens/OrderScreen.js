@@ -13,6 +13,7 @@ import MessageBox from "../components/MessageBox";
 import { Store } from "../Store";
 import { getError } from "../utils";
 import { toast } from "react-toastify";
+import Button from "react-bootstrap/Button";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -139,7 +140,13 @@ export default function OrderScreen() {
         <title>Order {orderId}</title>
       </Helmet>
       <h1 className="my-3">
-        Order <br></br> {orderId}
+        Order: <br></br>{" "}
+        <Button
+          className="copyButton"
+          onClick={() => navigator.clipboard.writeText(orderId)}
+        >
+          Copy Order #
+        </Button>
       </h1>
       <Row>
         <Col md={8}>
@@ -148,7 +155,7 @@ export default function OrderScreen() {
               <Card.Title>Shipping</Card.Title>
               <Card.Text>
                 <strong>Name:</strong> {order.shippingAddress.fullName} <br />
-                <strong>Address: </strong> {order.shippingAddress.address},
+                <strong>Address: </strong> {order.shippingAddress.address},{" "}
                 {order.shippingAddress.city} {order.shippingAddress.zipCode}{" "}
                 {order.shippingAddress.country}
               </Card.Text>
