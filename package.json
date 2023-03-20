@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jjf02987/GGW/issues"
   },
-  "homepage": "https://github.com/jjf02987/GGW#readme"
+  "homepage": "https://github.com/jjf02987/GGW#readme",
+  "dependencies": {
+    "check": "^1.0.0"
+  }
 }
