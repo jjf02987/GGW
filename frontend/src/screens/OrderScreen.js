@@ -139,8 +139,7 @@ export default function OrderScreen() {
       <Helmet>
         <title>Order {orderId}</title>
       </Helmet>
-      <h1 className="my-3">
-        Order: <br></br>{" "}
+      <h1 className="Omy-3">
         <Button
           className="copyButton"
           onClick={() => navigator.clipboard.writeText(orderId)}
