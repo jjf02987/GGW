@@ -10,7 +10,8 @@
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
     "start": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "postinstall"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/jjf02987/GGW#readme",
   "dependencies": {
-    "check": "^1.0.0"
+    "check": "^1.0.0",
+    "postinstall": "^0.8.0"
   }
 }
