@@ -25,6 +25,7 @@
   "homepage": "https://github.com/jjf02987/GGW#readme",
   "dependencies": {
     "check": "^1.0.0",
+    "heroku": "^8.0.2",
     "postinstall": "^0.8.0"
   }
 }
