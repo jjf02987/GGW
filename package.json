@@ -17,10 +17,5 @@
   "bugs": {
     "url": "https://github.com/jjf02987/GGW/issues"
   },
-  "homepage": "https://github.com/jjf02987/GGW#readme",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "use-reducer-logger": "^1.0.2"
-  }
+  "homepage": "https://github.com/jjf02987/GGW#readme"
 }
