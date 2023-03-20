@@ -4,7 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "build": "npm install use-reducer-logger --legacy-peer-deps && cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "build": "npm install use-reducer-logger --force && cd backend && npm install  && cd ../frontend && npm install && npm run build",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
