@@ -27,5 +27,8 @@
     "check": "^1.0.0",
     "heroku": "^8.0.2",
     "postinstall": "^0.8.0"
+  },
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.4.0"
   }
 }
