@@ -22,7 +22,7 @@ import OrderScreen from "./screens/OrderScreen";
 import OrderHistoryScreen from "./screens/OrderHistory";
 import ProfileScreen from "./screens/ProfileScreen";
 
-function App() {
+function app() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
 
@@ -109,4 +109,4 @@ function App() {
   );
 }
 
-export default App;
+export default app;
