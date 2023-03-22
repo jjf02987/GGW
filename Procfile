@@ -1,1 +1,1 @@
-web: node C:/GGW/frontend/src/app.js 
+web: node app.js 
