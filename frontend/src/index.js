@@ -8,13 +8,6 @@ import App from "./app";
 import reportWebVitals from "./reportWebVitals";
 import { StoreProvider } from "./Store";
 
-const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
-
-const webpackConfig = {
-  plugins: [new CaseSensitivePathsPlugin()],
-};
-
-webpackConfig();
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
