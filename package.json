@@ -24,8 +24,11 @@
   "homepage": "https://github.com/jjf02987/GGW#readme",
   "dependencies": {
     "check": "^1.0.0",
+    "cloudinary": "^1.35.0",
     "heroku": "^8.0.2",
-    "postinstall": "^0.8.0"
+    "multer": "^1.4.5-lts.1",
+    "postinstall": "^0.8.0",
+    "streamifier": "^0.1.1"
   },
   "devDependencies": {
     "case-sensitive-paths-webpack-plugin": "^2.4.0"
