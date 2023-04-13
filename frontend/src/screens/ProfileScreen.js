@@ -11,7 +11,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "UPDATE_REQUEST":
       return { ...state, loadingUpdate: true };
-    case "UPDATE_SUCESS":
+    case "UPDATE_SUCCESS":
       return { ...state, loadingUpdate: false };
     case "UPDATE_FAIL":
       return { ...state, loadingUpdate: false };
@@ -44,7 +44,7 @@ export default function ProfileScreen() {
           password,
         },
         {
-          headers: { Authorization: `Bearer ${userInfo.token}` },
+          headers: { Authorization: `BEARER ${userInfo.token}` },
         }
       );
       dispatch({
@@ -85,14 +85,14 @@ export default function ProfileScreen() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Change Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setConfirmPassword(e.target.value)}

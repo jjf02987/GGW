@@ -44,7 +44,6 @@ function reducer(state, action) {
         loadingDeliver: false,
         successDeliver: false,
       };
-
     default:
       return state;
   }
@@ -129,7 +128,7 @@ export default function OrderScreen() {
     };
 
     if (!userInfo) {
-      return navigate("/signin");
+      return navigate("/login");
     }
     if (
       !order._id ||
@@ -181,7 +180,7 @@ export default function OrderScreen() {
         }
       );
       dispatch({ type: "DELIVER_SUCCESS", payload: data });
-      toast.success("Order is delivered!");
+      toast.success("Order is delivered");
     } catch (err) {
       toast.error(getError(err));
       dispatch({ type: "DELIVER_FAIL" });
@@ -197,14 +196,7 @@ export default function OrderScreen() {
       <Helmet>
         <title>Order {orderId}</title>
       </Helmet>
-      <h1 className="Omy-3">
-        <Button
-          className="copyButton"
-          onClick={() => navigator.clipboard.writeText(orderId)}
-        >
-          Copy Order #
-        </Button>
-      </h1>
+      <h1 className="Omy-3">Order {orderId}</h1>
       <Row>
         <Col md={8}>
           <Card className="Omb-3">
@@ -212,16 +204,15 @@ export default function OrderScreen() {
               <Card.Title>Shipping</Card.Title>
               <Card.Text>
                 <strong>Name:</strong> {order.shippingAddress.fullName} <br />
-                <strong>Address: </strong> {order.shippingAddress.address},{" "}
-                {order.shippingAddress.city} {order.shippingAddress.zipCode}{" "}
-                {order.shippingAddress.country}
+                <strong>Address: </strong> {order.shippingAddress.address},
+                {order.shippingAddress.city}, {order.shippingAddress.postalCode}
+                ,{order.shippingAddress.country}
                 &nbsp;
                 {order.shippingAddress.location &&
                   order.shippingAddress.location.lat && (
                     <a
                       target="_new"
-                      href={`https://maps.google.com?
-                    q=${order.shippingAddress.location.lat},${order.shippingAddress.location.lng}`}
+                      href={`https://maps.google.com?q=${order.shippingAddress.location.lat},${order.shippingAddress.location.lng}`}
                     >
                       Show On Map
                     </a>
