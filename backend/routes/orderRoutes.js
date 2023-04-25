@@ -1,7 +1,10 @@
 import express from "express";
 import expressAsyncHandler from "express-async-handler";
 import Order from "../models/orderModel.js";
+import User from "../models/userModel.js";
+import Product from "../models/productModel.js";
 import { isAdmin, isAuth } from "../utils.js";
+import { CourierClient } from "@trycourier/courier";
 
 const orderRouter = express.Router();
 
@@ -10,7 +13,7 @@ orderRouter.get(
   isAuth,
   isAdmin,
   expressAsyncHandler(async (req, res) => {
-    const orders = await Order.find().populate("user", "name");
+    const orders = await Order.find();
     res.send(orders);
   })
 );
@@ -77,7 +80,10 @@ orderRouter.put(
   "/:id/pay",
   isAuth,
   expressAsyncHandler(async (req, res) => {
-    const order = await Order.findById(req.params.id);
+    const order = await Order.findById(req.params.id).populate(
+      "user",
+      "email name"
+    );
     if (order) {
       order.isPaid = true;
       order.paidAt = Date.now();
@@ -88,6 +94,34 @@ orderRouter.put(
         email_address: req.body.email_address,
       };
 
+      const courier = CourierClient({
+        authorizationToken: "pk_prod_0T91R9YGJ3MJMBQ5N8476EAZHPZA",
+      });
+
+      const options = {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Authorization: "Bearer pk_prod_0T91R9YGJ3MJMBQ5N8476EAZHPZA",
+        },
+        body: JSON.stringify({
+          message: {
+            content: {
+              title: "Test email",
+              body: "this is my message",
+            },
+            to: {
+              email: `${order.user.name} <${order.user.email}>`,
+            },
+          },
+        }),
+      };
+
+      fetch("https://api.courier.com/send", options)
+        .then((response) => response.json())
+        .then((response) => console.log(response))
+        .catch((err) => console.error(err));
       const updatedOrder = await order.save();
       res.send({ message: "Order Paid", order: updatedOrder });
     } else {
