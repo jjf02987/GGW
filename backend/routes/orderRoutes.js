@@ -95,7 +95,7 @@ orderRouter.put(
       };
 
       const courier = CourierClient({
-        authorizationToken: "pk_prod_0T91R9YGJ3MJMBQ5N8476EAZHPZA",
+        authorizationToken: process.env.COURIER_KEY,
       });
 
       const options = {
@@ -103,7 +103,7 @@ orderRouter.put(
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          Authorization: "Bearer pk_prod_0T91R9YGJ3MJMBQ5N8476EAZHPZA",
+          Authorization: `Bearer ${process.env.COURIER_KEY}`,
         },
         body: JSON.stringify({
           message: {
