@@ -247,7 +247,7 @@ function ProductScreen() {
             </form>
           ) : (
             <MessageBox>
-              Please(' ')
+              Please{" "}
               <Link to={`/signin?redirect=/product/${product.slug}`}>
                 Sign In
               </Link>{" "}
