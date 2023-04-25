@@ -251,7 +251,7 @@ function ProductScreen() {
               <Link to={`/signin?redirect=/product/${product.slug}`}>
                 Sign In
               </Link>{" "}
-              to write a review!
+              to write a review!!
             </MessageBox>
           )}
         </div>
